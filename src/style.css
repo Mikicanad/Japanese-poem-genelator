@@ -1,5 +1,5 @@
 body {
-    background-color: #ff80c8;
+    background-color: #e0ffcd;
     font-family: Helvetica, Arial, sans-serif;
 
 }
@@ -9,11 +9,11 @@ h1 {
     font-weight: 800;
     font-size: 36px;
     line-height: 1.5;
-    color: #7f3ccb;
+    color: #fabea0;
 }
 
 a {
-    color: #7f3ccb;
+    color: #ffcab0;
 }
 
 header {
@@ -28,8 +28,8 @@ header {
 
 form {
 padding: 30px;
-background-color: #f9def9;
-box-shadow: 0px 20px  60px rgba(65, 50, 100, 0.08);
+background-color: #fdffcd;
+box-shadow: 0px 4px 30px 0px rgba(39, 33, 66, 0.3);
 border-radius: 65px;
 display: flex;
 margin-bottom: 30px;
@@ -47,8 +47,8 @@ color: #272044;
 }
 .submit-button {
     margin-left: 10px;
-    background: #7f3ccb;
-    color: rgb(226, 191, 227);
+    background: #fbc2a6;
+    color: #e0ffcd;
     border: none;
     width: 150px;
     font-size: 16px;
@@ -58,10 +58,10 @@ color: #272044;
 
 .poem {
     font-size: 16px;
-    background-color:#f9def9;
-    padding: 20px;
+    background-color:#fdffcd;
+    padding: 30px;
     line-height: 2;
-    border-left: 3px solid #885df1;
+    border-left: 3px solid #ffcab0;
     box-shadow: 0px 4px 30px 0px rgba(39, 33, 66, 0.3);
     border-radius: 20px;
     
