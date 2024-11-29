@@ -64,7 +64,11 @@ color: #272044;
     border-left: 3px solid #ffcab0;
     box-shadow: 0px 4px 30px 0px rgba(39, 33, 66, 0.3);
     border-radius: 20px;
-    
+  
+}
+
+.poem strong {
+    color:#ffcab0;
 }
 
 
