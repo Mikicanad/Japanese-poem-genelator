@@ -1,13 +1,11 @@
 function displayPoem(response) {
-    console.log("poem generatated");
+
   new Typewriter("#poem", {
     strings: response.data.answer,
     autoStart: true,
     delay: 1,
     cursor: "",
   });
-
-
 }
 
 function generatePoem(event) {
@@ -22,13 +20,8 @@ let poemElement = document.querySelector("#poem");
 poemElement.classList.remove("hidden");
 poemElement.innerHTML = `<div class="generating">⌛️Generating a Japanese poem about ${instructionsInput.value}...</ div>`
 
-console.log("Generating poem...");
-console.log(`Prompt: ${prompt}`);
-console.log(`Context: ${context}`);
-            
 axios.get(aipURL).then(displayPoem);
 
-  
 }
 
 let poemFormElement = document.querySelector("#poem-generator-form");
