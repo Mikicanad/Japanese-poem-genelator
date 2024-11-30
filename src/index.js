@@ -15,15 +15,17 @@ function generatePoem(event) {
 
 let instructionsInput = document.querySelector("#user-instruction");
 let apiKey ="3c0eca18f3a2743b8tdo8c93b0a6483f";
-let context="User instruction: You are a romantic Poem expert and love to write short poems. You mission is to generate a 4 line poem in basic HTML and separate each line with a <br /> Make sure to follow the user instructions. Do not include the title to the poem. Sign the poem with 'SheCodes AI' inside a <strong>element.";
-let prompt=`Generate a Japanese poem about ${instructionsInput} `;
+let context = "User instruction: You are a romantic poem expert. Write a short 4-line Japanese poem. Make sure to generate it in HTML format using <br /> for line breaks, but do not include any extra HTML tags such as <html> or <body>. End the poem with 'SheCodes AI' at the end and bottom, and inside a <strong> tag.";
+let prompt = `Generate a Japanese poem about ${instructionsInput}`; 
 let aipURL=`https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+let poemElement = document.querySelector("#poem");
+poemElement.classList.remove("hidden");
+poemElement.innerHTML = `<div class="generating">⌛️Generating a Japanese poem about ${instructionsInput.value}...</ div>`
 
-
-console.log("Generating poem");
-console.log(`prompt: ${prompt}`);
-console.log(`context: ${context}`);
-
+console.log("Generating poem...");
+console.log(`Prompt: ${prompt}`);
+console.log(`Context: ${context}`);
+            
 axios.get(aipURL).then(displayPoem);
 
   
